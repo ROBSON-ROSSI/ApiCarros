@@ -1,0 +1,66 @@
+API DE CARROS
+=========================================
+Descrição da API:
+Essa API possui um banco de dados relacionado a carros.
+Sendo possivel realizar consultas, filtrar por modelo de veiculo.
+
+===========================================================================
+Essa API fornece 2 rotas no metodo GET como mostrado abaixo.
+
+Ex: http://127.0.0.1:3000/carros. =   Essa Rota lista todos os carros cadatrado no banco de dados
+Ex: http://127.0.0.1:3000/carros/id = Essa rota realiza o filtro atraves do numero id do carro
+
+OBSERVAÇÃO:
+Só use 127.0.0.1 se o seu computador for o servidor da API, caso contrario utilize o ip do servidor.
+Ex: http://179.2.15.45:3000/carros, isso se aplica também para todas as rotas.
+
+==================================================================================
+Para realizar consulta de todos carros:
+Ex: http://127.0.0.1:3000/carros
+
+Chamando API http://127.0.0.1:3000/carros 
+
+===================================================================================
+Para realizar um filtro, basta usar a rota abaixo
+
+Ex: http://127.0.0.1:3000/carros/id 
+
+Nesta rota você passa o id, esse parametro e o id do carro como mostrado abaixo, assim o filtro e realizado.
+
+Chamando API http://127.0.0.1:3000/carros/4 
+
+====================================================================================
+Como instalar o servidor da API.
+
+1 Você precisa ter o node js instalado em seu compuador, caso não tenha.
+baixe neste link https://nodejs.org/dist/v20.17.0/node-v20.17.0-x64.msi
+
+2 Descompacta a pasta do projeto com 7.zip ou winrar, caso não tenha baixe neste link
+https://www.7-zip.org/a/7z2408-x64.exe
+
+3 Agora você vai precisar instalar o banco de dados mysql
+baixe neste link https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.0.30/xampp-windows-x64-8.0.30-0-VS16-installer.exe.
+Após instalar o xamp, execute ele, e start o mysql e o Phpmyadmin.
+Baixe também o MySQL Workbench 8.0 CE neste link https://dev.mysql.com/downloads/workbench/.
+Agora abra o Workbench 8.0 CE, e execute o script do banco de dados que esta na pasta Apicarros. 
+O script do arquivo é o Apicarros.sql.
+
+4 Após instalar o Node js, 7zip, workbench e o Xamp. Descompacte a pasta "Apicarros" da api com 7zip,e após extrair, copie a 
+pasta Apicarros para C: da sua maquina.
+
+Após copiar a pasta para C:, precione a tecla Windows + R, vai abrir uma caixa executar.
+Nesta caixa executar digite CMD.exe, ira abrir o prompt de comando.
+Neste prompt de comando, você vai digitar cd c:\Apicarros.
+Após realizar o comando você vai digitar npm start.
+
+Pronto sua API ja está funcioando e pronta para ser consumida.
+
+=====================================================================================
+
+Link do GitHub https://github.com/ROBSON-ROSSI/ApiCarros.git
+
+
+
+
+
+
